@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root { // dark / light mode
+  --tw-primary: 122 253 214; //33 176 254;
+  --tw-secondary: 28 37 65; //251 246 239;
+  --tw-thirdly: 11 19 43; //220 224 217;
+}
