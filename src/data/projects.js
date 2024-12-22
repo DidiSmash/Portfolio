@@ -123,7 +123,7 @@ const company = [
       "(principalement vue, symphony et tw, mais aussi quasar pour espace cli. et expliquer rapidement) la gestion de projet: " +
       "crée nouvelle branche, fait ajout en local, tests, si ok test avec jenkins (simule la version en ligne du projet pour voir " +
       "si aucune erreur) crée MR et envoie la mr avec description au groupe pour qu'ils verif avant de push ",
-    logo: "src/assets/icons/comCompanyLogo.png",
+    logo: new URL('assets/icons/comCompanyLogo.png', import.meta.url).href,
     logoBg: "#ffffff",
     color: "#f7a424",
     location: "94 quai Charles de Gaulle 69 006 Lyon",
@@ -140,14 +140,14 @@ const projects = [
     description:
       "La page chiffres clés permet de Rechercher, Créer et Éditer des chiffres clés et leurs valeurs. Permettant par la suite aux autres applications de les récupérer grâce à une API.",
     more: "Blablabla",
-    logo: "src/assets/projects/TethysIcon.png",
+    logo: new URL('assets/projects/TethysIcon.png', import.meta.url).href,
     logoBg: "#153155",
     company: foundCompany("COM&Company"),
     frameworks: [foundLanguage("VueJs"), foundLanguage("Symphony"), foundLanguage("Tailwind")],
     date: "2024",
     images: [
-      "src/assets/projects/images/chiffresCles1.png",
-      "src/assets/projects/images/chiffresCles2.png",
+      new URL('assets/projects/images/chiffresCles1.png', import.meta.url).href,
+      new URL('assets/projects/images/chiffresCles2.png', import.meta.url).href,
     ],
   },
   {
@@ -156,14 +156,14 @@ const projects = [
     description:
       "La page des crons était déjà créée sur tethys, mon travail était donc de rajouter 2 éléments à cette page:\n\n1. La durée de la dernière exécution à la base de donnée des crons permettant de savoir directement combien de temps a pris le dernier cron et vérifié qu'il n'y ait pas eu d'erreurs.\n\n2. l'ajout d'une nouvelle action “historique” qui répertorie tout l’historique d’un cron avec les dates et durées d'exécution ainsi que les erreurs s'il y en a eu.",
     more: "Blablabla",
-    logo: "src/assets/projects/TethysIcon.png",
+    logo: new URL('assets/projects/TethysIcon.png', import.meta.url).href,
     logoBg: "#153155",
     company: foundCompany("COM&Company"),
     frameworks: [foundLanguage("VueJs"), foundLanguage("Symphony"), foundLanguage("Tailwind")],
     date: "2024",
     images: [
-      "src/assets/projects/images/tethysCron1.png",
-      "src/assets/projects/images/tethysCron2.png",
+      new URL('assets/projects/images/tethysCron1.png', import.meta.url).href,
+      new URL('assets/projects/images/tethysCron2.png', import.meta.url).href,
     ],
   },
   {
@@ -172,7 +172,7 @@ const projects = [
     description:
       "La page pratique de l’espace client est une page qui recentre toutes les informations dont un utilisateur pourrait avoir besoin, elle permet de naviguer entre les pages d’aides et d’en chercher une grâce à son titre, son contenu ou sa catégorie.",
     more: "Blablabla",
-    logo: "src/assets/projects/ValorityIcon.png",
+    logo: new URL('assets/projects/ValorityIcon.png', import.meta.url).href,
     logoBg: "#d5a879",
     company: foundCompany("COM&Company"),
     frameworks: [
@@ -183,9 +183,9 @@ const projects = [
     ],
     date: "2024",
     images: [
-      "src/assets/projects/images/espaceClient3.jpg",
-      "src/assets/projects/images/espaceClient2.jpg",
-      "src/assets/projects/images/espaceClient1.jpg",
+      new URL('assets/projects/images/espaceClient3.jpg', import.meta.url).href,
+      new URL('assets/projects/images/espaceClient2.jpg', import.meta.url).href,
+      new URL('assets/projects/images/espaceClient1.jpg', import.meta.url).href,
     ],
   },
   {
@@ -194,7 +194,7 @@ const projects = [
     description:
       "Site web de vente d'objets informatique reconditionné et chef-d’œuvre de mon bac pro SN.",
     more: "Blablabla",
-    logo: "src/assets/projects/EcoElecIcon.png",
+    logo: new URL('assets/projects/EcoElecIcon.png', import.meta.url).href,
     logoBg: "#72ff77",
     company: null,
     languages: [
@@ -205,10 +205,10 @@ const projects = [
     frameworks: null,
     date: "2024",
     images: [
-      "src/assets/projects/images/ecoElec1.png",
-      "src/assets/projects/images/ecoElec2.png",
-      "src/assets/projects/images/ecoElec3.png",
-      "src/assets/projects/images/ecoElec4.png",
+      new URL('assets/projects/images/ecoElec1.png', import.meta.url).href,
+      new URL('assets/projects/images/ecoElec2.png', import.meta.url).href,
+      new URL('assets/projects/images/ecoElec3.png', import.meta.url).href,
+      new URL('assets/projects/images/ecoElec4.png', import.meta.url).href,
     ],
   },
   {
@@ -217,15 +217,15 @@ const projects = [
     description:
       "Tower défense 3D créant des map aléatoires à chaque niveau ou nouvelle partie.",
     more: "Blablabla",
-    logo: "src/assets/projects/TDGD-3DIcon.png",
+    logo: new URL('assets/projects/TDGD-3DIcon.png', import.meta.url).href,
     logoBg: "#dc9571",
     company: null,
     languages: [foundLanguage("Godot")],
     frameworks: null,
     date: "2024",
     images: [
-      "src/assets/projects/images/TDGD3D1.png",
-      "src/assets/projects/images/TDGD3D2.png",
+      new URL('assets/projects/images/TDGD3D1.png', import.meta.url).href,
+      new URL('assets/projects/images/TDGD3D2.png', import.meta.url).href,
     ],
   },
   {
@@ -234,7 +234,7 @@ const projects = [
     description:
       "Fausse application mobile du site de l'ENT, dans le but de faire de la prévention sur les dangers de données ses informations personnelles sans vérifier l'auteur.",
     more: "Blablabla",
-    logo: "src/assets/projects/EntIcon.png",
+    logo: new URL('assets/projects/EntIcon.png', import.meta.url).href,
     logoBg: "#ffffff",
     company: null,
     languages: [foundLanguage("Kotlin")],
@@ -253,7 +253,7 @@ const projects = [
     description:
       "Bot discord multifonctionnel, permettant de gérer des serveurs discords, de jouer à des jeux et faire des actions de modération.",
     more: "Blablabla",
-    logo: "src/assets/projects/AkuBotIcon.png",
+    logo: new URL('assets/projects/AkuBotIcon.png', import.meta.url).href,
     logoBg: "#343950",
     company: null,
     frameworks: [foundLanguage("DiscordJs")],

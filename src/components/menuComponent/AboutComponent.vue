@@ -55,14 +55,14 @@
           <p class="tw-text-2xl tw-my-10">A propos</p>
           <div class="tw-flex tw-place-content-center tw-py-5">
             <div class="tw-text-lg tw-mr-10 tw-bg-gray-500 tw-w-1/6 tw-rounded-2.5xl">
-              <q-img src="src/assets/png/CV.png" alt="CV" class="tw-w-full tw-h-full tw-rounded-2.5xl"></q-img>
+              <q-img :src="CV" alt="CV" class="tw-w-full tw-h-full tw-rounded-2.5xl"></q-img>
             </div>
             <div class="tw-py-8 tw-text-lg tw-ml-10">
-              <a href="src/assets/pdf/CV.pdf" target="_blank">
+              <a href="/Portfolio/pdf/CV.pdf" target="_blank">
                 <q-btn rounded no-caps class="tw-bg-primary tw-text-thirdly tw-my-2.5">Voir en pdf</q-btn>
               </a>
               <br>
-              <a href="src/assets/pdf/CV.pdf" download="CV">
+              <a href="/Portfolio/pdf/CV.pdf" download="CV">
                 <q-btn rounded no-caps class="tw-bg-primary tw-text-thirdly tw-my-2.5">Télécharger</q-btn>
               </a>
             </div>
@@ -90,6 +90,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 
 const modules = [Navigation];
+const CV = new URL('assets/png/CV.png', import.meta.url).href;
 </script>
 
 <style scoped>

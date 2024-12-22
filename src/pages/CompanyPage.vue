@@ -22,6 +22,7 @@
             <p class="tw-text-lg tw-mt-2">Situation géographique :</p>
             <div @click="openMap = company.locationUrl" class="tw-mr-5 hover:tw-text-primary hover:tw-cursor-pointer">
               {{ company.location }}
+              {{ company.logo }}
             </div>
           </div>
         </div>
