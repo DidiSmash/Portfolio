@@ -81,13 +81,9 @@
 // Import Swiper Vue.js components
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.css'; // Import Swiper styles
 
 import roadMapContent from "src/data/roadMap";
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/scrollbar';
 
 const modules = [Navigation];
 const CV = new URL('assets/png/CV.png', import.meta.url).href;
