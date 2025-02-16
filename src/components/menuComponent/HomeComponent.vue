@@ -8,9 +8,7 @@
     >
       <div class="tw-bg-primary tw-mt-16 tw-mr-96 tw-p-1 tw-px-2 tw-rounded-xl">
         <p class="tw-text-center tw-text-thirdly">
-          Bonjour ! Je m’appelle <br /><span class="tw-font-bold"
-        >killian tonione</span
-        >
+          Bonjour ! Je m’appelle <br /><span class="tw-font-bold">killian tonione</span>
         </p>
       </div>
 
@@ -19,31 +17,27 @@
           Je suis <br /><span class="tw-font-bold">développeur fullstack</span>
         </p>
         <p class="tw-py-8 tw-w-1/2">
-          Depuis 4 ans, je développe des petits bots, des sites web, des
-          applications de bureau et mobiles ainsi que des petits jeux dans de
-          nombreux langages.
+          Depuis 4 ans, je développe des petits bots, des sites web, des applications de bureau et
+          mobiles ainsi que des petits jeux dans de nombreux langages.
         </p>
       </div>
 
-      <q-btn
-        rounded
-        @click="handleMouseDown"
-        class="tw-bg-primary tw-text-thirdly tw-mb-16"
-      >En savoir plus</q-btn
+      <q-btn rounded @click="handleMouseDown" class="tw-bg-primary tw-text-thirdly tw-mb-16"
+        >En savoir plus</q-btn
       >
     </div>
   </div>
 </template>
 
 <script setup>
-import { defineEmits } from "vue";
+import { defineEmits } from 'vue'
 
-const emit = defineEmits(["nextSlide"]);
+const emit = defineEmits(['nextSlide'])
 
 function handleMouseDown() {
   setTimeout(() => {
-    emit("nextSlide");
-  }, 500);
+    emit('nextSlide')
+  }, 500)
 }
 </script>
 

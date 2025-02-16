@@ -265,6 +265,55 @@ const projects = [
       "https://cdn.quasar.dev/img/parallax1.jpg",
     ],
   },
+  {
+    id: 8,
+    title: "BO Espace Client - Informations avancées utilisateur",
+    description:
+      "Page avec les informations avancer d’un utilisateur pour centraliser " +
+      "un maximum de donnée et trouver des solutions à ses problèmes plus facilement.",
+    more: "Blablabla",
+    logo: new URL('assets/projects/ValorityIcon.png', import.meta.url).href,
+    logoBg: "#3d613c",
+    company: foundCompany("COM&Company"),
+    frameworks: [
+      foundLanguage("VueJs"),
+      foundLanguage("Symphony"),
+      foundLanguage("Tailwind"),
+    ],
+    date: "2025",
+    images: [
+      new URL('assets/projects/images/boEspaceClient4.png', import.meta.url).href,
+      new URL('assets/projects/images/boEspaceClient3.png', import.meta.url).href,
+      new URL('assets/projects/images/boEspaceClient2.png', import.meta.url).href,
+      new URL('assets/projects/images/boEspaceClient1.png', import.meta.url).href,
+    ],
+  },
+  {
+    id: 9,
+    title: "E-Tromby - Bannières de signature",
+    description:
+      "La page bannières de signature permet au administrateur de gérer les bannières qu'on un ou plusieurs " +
+      "utilisateur sur leurs signature, ensuite visible en bas de leurs mails. à partir de cette page nous pouvonts " +
+      "créer des bannières personnalisable doté de date de début, de date de fin, d'affectation et même de " +
+      "lien cliquable. Elles peuvent être modifiées à tout moment. et une section de filtre permet de " +
+      "les retrouver rapidement.",
+    more: "Blablabla",
+    logo: new URL('assets/projects/ValorityIcon.png', import.meta.url).href,
+    logoBg: "#785e41",
+    company: foundCompany("COM&Company"),
+    frameworks: [
+      foundLanguage("VueJs"),
+      foundLanguage("Symphony"),
+      foundLanguage("Tailwind"),
+    ],
+    date: "2024",
+    images: [
+      new URL('assets/projects/images/trombyBanniere4.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere2.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere3.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere1.png', import.meta.url).href,
+    ],
+  },
 ];
 
 export default [

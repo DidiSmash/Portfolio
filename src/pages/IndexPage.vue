@@ -5,11 +5,11 @@
       :modules="modules"
       :slides-per-view="1"
       :space-between="0"
-      direction="vertical"
       :mousewheel="mousewheel"
       :pagination="pagination"
       touch-events-target="container"
       class="tw-h-dvh tw-w-full tw-bg-thirdly"
+      direction="vertical"
     >
       <swiper-slide>
         <HomeComponent @nextSlide="nextSlide" />
@@ -33,12 +33,13 @@
 <script setup>
 import { ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination, Mousewheel } from "swiper/modules";
+import { Pagination, Mousewheel, EffectCreative } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/effect-creative";
 
 import HomeComponent from "components/menuComponent/HomeComponent.vue";
 import AboutComponent from "components/menuComponent/AboutComponent.vue";
@@ -48,7 +49,7 @@ import ContactComponent from 'components/menuComponent/ContactComponent.vue'
 
 const swiperInstance = ref();
 const icons = ref(["home", "info", "construction", "newspaper", "email"]);
-const modules = [Pagination, Mousewheel];
+const modules = [Pagination, Mousewheel, EffectCreative];
 const mousewheel = ref({ forceToAxis: true, releaseOnEdges: true });
 const pagination = ref({
   clickable: true,
@@ -97,11 +98,34 @@ function nextSlide() {
     padding-top: 6%;
     padding-bottom: 6%;
     color: #6d28d9;
+    transition: transform 0.3s, background-color 0.3s;
   }
 
   :global(.swiper-pagination-bullet-active) {
     background-color: rgb(var(--tw-thirdly));
     color: rgb(var(--tw-primary));
   }
+
+  :global(.custom-pagination:hover) {
+    transform: scale(1.1);
+    background-color: rgba(109, 40, 217, 0.1);
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 </style>
