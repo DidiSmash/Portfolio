@@ -314,6 +314,32 @@ const projects = [
       new URL('assets/projects/images/trombyBanniere1.png', import.meta.url).href,
     ],
   },
+  {
+    id: 10,
+    title: "Gourmetise",
+    description:
+      "L'application Gourmetise permet aux boulangers de participer à un concours face à d'autres " +
+      "boulangeries de leurs région de partager leur passion pour la boulangerie et aux amateurs de" +
+      "découvrir les meilleures boulangeries de la région.",
+    more: "Blablabla",
+    logo: new URL('assets/projects/GourmetiseIcon.png', import.meta.url).href,
+    logoBg: "#bc4242",
+    company: null,
+    languages: [foundLanguage("Kotlin")],
+    frameworks: [
+      foundLanguage("VueJs"),
+      foundLanguage("Symphony"),
+      foundLanguage("Tailwind"),
+      foundLanguage("Android Studio")
+    ],
+    date: "2025",
+    images: [
+      new URL('assets/projects/images/trombyBanniere4.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere2.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere3.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere1.png', import.meta.url).href,
+    ],
+  },
 ];
 
 export default [
