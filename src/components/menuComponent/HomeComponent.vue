@@ -22,23 +22,17 @@
         </p>
       </div>
 
-      <q-btn rounded @click="handleMouseDown" class="tw-bg-primary tw-text-thirdly tw-mb-16"
-        >En savoir plus</q-btn
-      >
+      <a href="/Portfolio/pdf/CV.pdf" target="_blank">
+        <q-btn rounded no-caps class="tw-bg-primary tw-text-thirdly tw-mb-5"
+        >Voir mon CV</q-btn
+        >
+      </a>
     </div>
   </div>
 </template>
 
 <script setup>
-import { defineEmits } from 'vue'
 
-const emit = defineEmits(['nextSlide'])
-
-function handleMouseDown() {
-  setTimeout(() => {
-    emit('nextSlide')
-  }, 500)
-}
 </script>
 
 <style scoped></style>

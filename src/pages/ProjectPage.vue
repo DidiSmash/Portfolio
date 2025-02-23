@@ -68,13 +68,19 @@
         Images associés :
       </p>
       <p v-else class="tw-mx-28 tw-py-5 tw-text-xl">Aucune images associés</p>
-      <div class="tw-grid tw-grid-cols-2 tw-gap-10 tw-mx-28 tw-pb-10">
+
+      <div class="tw-grid tw-grid-cols-2 tw-justify-center tw-gap-10 tw-mx-28 tw-pb-10">
         <div
           v-for="image in project.images"
           :key="image"
-          class="tw-relative icon tw-h-fit tw-w-3/4 tw-p-1 tw-z-10"
+          class="icon tw-p-1 tw-z-10 tw-min-w-0"
         >
-          <q-img :src="image" @click="selectedImg = image" alt="parallax1" class="tw-rounded-2.5xl" />
+          <q-img
+            :src="image"
+            fit="contain"
+            @click="selectedImg = image"
+            class="tw-rounded-2.5xl tw-max-h-96 tw-w-full"
+          />
         </div>
       </div>
     </div>
@@ -147,7 +153,6 @@ function changeDirection() {
 
 <style scoped>
 .icon {
-  position: relative;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   transition: 0.5s;

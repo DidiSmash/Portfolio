@@ -241,10 +241,10 @@ const projects = [
     frameworks: [foundLanguage("Android Studio")],
     date: "2024",
     images: [
-      "https://cdn.quasar.dev/img/parallax1.jpg",
-      "https://cdn.quasar.dev/img/parallax2.jpg",
-      "https://cdn.quasar.dev/img/parallax1.jpg",
-      "https://cdn.quasar.dev/img/parallax1.jpg",
+      new URL('assets/projects/images/fakeEnt4.png', import.meta.url).href,
+      new URL('assets/projects/images/fakeEnt3.png', import.meta.url).href,
+      new URL('assets/projects/images/fakeEnt2.png', import.meta.url).href,
+      new URL('assets/projects/images/fakeEnt1.png', import.meta.url).href,
     ],
   },
   {

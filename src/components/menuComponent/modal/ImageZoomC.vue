@@ -1,7 +1,7 @@
 <template>
   <div v-if="isVisible" class="modal-overlay" @click.self="close">
-    <div class="tw-bg-secondary tw-p-5 tw-rounded-2.5xl tw-w-3/5 ">
-      <q-img :src="image" alt="parallax1" class="tw-rounded-2.5xl" />
+    <div class="tw-bg-secondary tw-p-5 tw-rounded-2.5xl tw-w-3/5">
+      <q-img :src="image" :fit="'contain'" alt="parallax1" class="tw-rounded-2.5xl tw-max-h-[50rem]" />
     </div>
   </div>
 </template>
