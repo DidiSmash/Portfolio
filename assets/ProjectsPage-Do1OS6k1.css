@@ -1,1 +1,0 @@
-@property --angle{syntax: "<angle>"; initial-value: 0deg; inherits: false;}.card[data-v-84b1a6fc]{position:relative;box-shadow:20px 20px 50px #00000080;border-radius:20px;transition:.5s}.card[data-v-84b1a6fc]:hover{background-color:rgb(var(--tw-primary))}@keyframes spin-84b1a6fc{to{--angle: 360deg}}
