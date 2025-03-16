@@ -24,6 +24,31 @@
               {{ company.location }}
             </div>
           </div>
+
+          <div class="tw-flex tw-items-center">
+            <p class="tw-text-lg tw-mt-2">Outils :</p>
+            <div
+              v-for="tool in company.tools"
+              :key="tool.id"
+              class="tw-h-1/2 tw-p-1 tw-mx-2 tw-my-1 tw-flex"
+            >
+              <q-img
+                fit="contain"
+                :src="tool"
+                alt="parallax1"
+                class="tw-rounded-2.5xl tw-mt-3 tw-p-5"
+              />
+            </div>
+          </div>
+
+          <div class="tw-items-baseline">
+            <p class="tw-text-lg tw-mt-2">Equipe :</p>
+            <span v-if="company"
+                  class="tw-text-sm tw-p-1 tw-whitespace-pre-wrap"
+            >
+                {{ company.team }}
+              </span>
+          </div>
         </div>
       </div>
       <div

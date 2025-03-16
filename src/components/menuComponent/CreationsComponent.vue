@@ -1,11 +1,10 @@
 <template>
-  <!-- over banner, stop les icons -->
   <div class="tw-bg-thirdly tw-flex tw-flex-col tw-h-dvh tw-justify-center tw-items-center">
     <div class="tw-flex tw-flex-col tw-text-center tw-items-center">
       <p class="tw-text-2.5xl -tw-mt-28 tw-text-white">Créations</p>
     </div>
 
-    <div class="banner tw-relative tw-bg-black/25 tw-w-full tw-h-16 tw-py-2 -tw-mt-14 tw-mb-3">
+    <div class="tw-relative tw-bg-black/25 tw-w-full tw-h-16 tw-py-2 -tw-mt-14 tw-mb-3" @mouseover="stopAnimation" @mouseleave="startAnimation">
       <q-avatar
         size="auto"
         color="white"
@@ -169,6 +168,14 @@ const avatarStyle = computed(() => {
   }))
 })
 
+function stopAnimation() {
+  document.querySelectorAll('.avatar').forEach(el => el.classList.add('avatar-stop'));
+}
+
+function startAnimation() {
+  document.querySelectorAll('.avatar').forEach(el => el.classList.remove('avatar-stop'));
+}
+
 for (let i = 0; i < projectsData.length; i++) {
   if (projectsData[i].id === 'languages') {
     languages.value = projectsData[i].data
@@ -201,7 +208,7 @@ function SearchAll() {
 
   for (let i = 0; i < projectsData.length; i++) {
     if (projectsData[i].id === 'projects') {
-      for (let j = 0; j < projectsData[i].data.length; j++) {
+      for (let j = projectsData[i].data.length - 1; j >= 0; j--) {
         if (projects.value.length <= 3) {
           projects.value.push(projectsData[i].data[j])
         }
@@ -275,6 +282,10 @@ function handleMouseDown() {
 .avatar {
   animation: scrollLeft 30s linear infinite;
   left: 106%;
+}
+
+.avatar-stop {
+  animation-play-state: paused;
 }
 
 @property --angle {

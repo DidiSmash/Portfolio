@@ -7,7 +7,7 @@
       class="tw-flex tw-flex-col tw-h-full tw-text-center tw-justify-center tw-items-center tw-text-white"
     >
       <div class="tw-bg-secondary tw-rounded-2.5xl tw-p-8 tw-w-1/2">
-        <p class="tw-text-2xl tw-my-10">A propos</p>
+        <p class="tw-text-2xl tw-my-10">Mon parcours</p>
         <div class="tw-flex tw-justify-around tw-relative tw-mt-20 tw-w-full">
           <!--bar-->
           <div
@@ -24,7 +24,8 @@
             class="tw-flex tw-flex-col tw-items-center tw-z-10"
           >
             <div
-              class="roadPoint tw-flex tw-w-10 tw-h-10 tw-bg-primary tw-rounded-full tw-items-center tw-justify-center tw-text-white tw-font-bold overflow-hidden"
+              :style="{ background: item.logoBg }"
+              class="roadPoint tw-flex tw-w-10 tw-h-10 tw-rounded-full tw-items-center tw-justify-center tw-text-white tw-font-bold overflow-hidden"
             >
               <q-img
                 fit="contain"

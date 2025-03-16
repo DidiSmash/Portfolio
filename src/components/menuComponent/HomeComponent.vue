@@ -14,10 +14,10 @@
 
       <div class="tw-flex tw-flex-col tw-text-center tw-items-center">
         <p class="tw-text-2.5xl">
-          Je suis <br /><span class="tw-font-bold">développeur fullstack</span>
+          Je suis <br /><span class="tw-font-bold">étudiant en BTS SIO</span>
         </p>
         <p class="tw-py-8 tw-w-1/2">
-          Depuis 4 ans, je développe des petits bots, des sites web, des applications de bureau et
+          Depuis 5 ans, je développe des petits bots, des sites web, des applications de bureau et
           mobiles ainsi que des petits jeux dans de nombreux langages.
         </p>
       </div>
