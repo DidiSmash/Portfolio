@@ -46,9 +46,9 @@ const languages = [
   },
   {
     id: 8,
-    name: "Lua",
-    color: "#3471ff",
-    icon: "lua/lua-original",
+    name: "VueJs",
+    color: "#72ff77",
+    icon: "vuejs/vuejs-original",
   },
   {
     id: 9,
@@ -70,9 +70,9 @@ const languages = [
   },
   {
     id: 12,
-    name: "Android Studio",
+    name: "Jetpack Compose",
     color: "#9aff72",
-    icon: "androidstudio/androidstudio-original",
+    icon: "jetpackcompose/jetpackcompose-original",
   },
   {
     id: 13,
@@ -82,18 +82,6 @@ const languages = [
   },
   {
     id: 14,
-    name: "ViteJs",
-    color: "#c072ff",
-    icon: "vitejs/vitejs-original",
-  },
-  {
-    id: 15,
-    name: "VueJs",
-    color: "#72ff77",
-    icon: "vuejs/vuejs-original",
-  },
-  {
-    id: 16,
     name: "Quasar",
     color: "#72efff",
     icon: "quasar/quasar-original",
@@ -235,7 +223,7 @@ const projects = [
     logoBg: "#ffffff",
     company: null,
     languages: [foundLanguage("Kotlin")],
-    frameworks: [foundLanguage("Android Studio")],
+    frameworks: [foundLanguage("Jetpack Compose")],
     date: "2024",
     images: [
       new URL('assets/projects/images/fakeEnt4.png', import.meta.url).href,
@@ -325,7 +313,13 @@ const projects = [
       foundLanguage("VueJs"),
       foundLanguage("Symphony"),
       foundLanguage("Tailwind"),
-      foundLanguage("Android Studio")
+      foundLanguage("Jetpack Compose")
+    ],
+    tools: [
+      new URL('assets/icons/phpstorm.png', import.meta.url).href,
+      new URL('assets/icons/androidStudio.png', import.meta.url).href,
+      new URL('assets/icons/github.png', import.meta.url).href,
+      new URL('assets/icons/trello.png', import.meta.url).href,
     ],
     date: "2025",
     images: [

@@ -25,6 +25,23 @@
               #{{ language.name }}
             </div>
           </div>
+
+          <div v-if="project.tools" class="tw-flex tw-items-center">
+            <p class="tw-text-lg tw-mt-2">Outils :</p>
+            <div
+              v-for="tool in project.tools"
+              :key="tool.id"
+              class="tw-h-1/2 tw-p-1 tw-mx-2 tw-my-1 tw-flex"
+            >
+              <q-img
+                fit="contain"
+                :src="tool"
+                alt="parallax1"
+                class="tw-rounded-2.5xl tw-mt-3 tw-p-5"
+              />
+            </div>
+          </div>
+
           <p v-if="company" class="tw-text-lg tw-mt-2">
             Entreprise :
             <span v-if="company"
@@ -55,12 +72,6 @@
         <p class="tw-text-lg tw-my-3 tw-w-2/3 tw-whitespace-pre-wrap">
           {{ project.description }}
         </p>
-        <p v-if="arrowDirection === 'up'" class="tw-text-lg tw-my-3 tw-w-2/3 tw-whitespace-pre-wrap">{{ project.more }}</p>
-
-        <q-btn rounded @click="changeDirection" class="tw-bg-primary tw-text-thirdly tw-my-5">
-          <q-icon :name="'keyboard_arrow_' + arrowDirection" />
-          Plus d'information
-        </q-btn>
       </div>
     </div>
     <div class="tw-w-full">
@@ -104,7 +115,6 @@ let route = useRoute();
 const project = ref(null);
 const company = ref(null);
 const selectedImg = ref(null);
-const arrowDirection = ref("down")
 
 for (let i = 0; i < projectsData.length; i++) {
   if (projectsData[i].id === "projects") {
@@ -144,10 +154,6 @@ function languages() {
   }
 
   return liste;
-}
-
-function changeDirection() {
-  arrowDirection.value === 'down' ? arrowDirection.value = 'up' : arrowDirection.value = 'down'
 }
 </script>
 

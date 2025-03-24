@@ -1,21 +1,21 @@
 <template>
-  <!-- rework les 3, c'est trop "basique" ils ce ressemble trop entre eux-->
+<!--  afficher les popup h24 pour up la hauteur-->
   <div
     class="tw-bg-thirdly tw-h-dvh"
   >
     <div
       class="tw-flex tw-flex-col tw-h-full tw-text-center tw-justify-center tw-items-center tw-text-white"
     >
-      <div class="tw-bg-secondary tw-rounded-2.5xl tw-p-8 tw-w-1/2">
-        <p class="tw-text-2xl tw-my-10">Mon parcours</p>
+      <div class="tw-bg-secondary tw-rounded-2.5xl tw-p-10 tw-w-4/5">
+        <p class="tw-text-3xl tw-my-12">Mon parcours</p>
         <div class="tw-flex tw-justify-around tw-relative tw-mt-20 tw-w-full">
           <!--bar-->
           <div
-            class="tw-absolute tw-top-1/2 tw-left-0 tw-right-0 tw-h-1 tw-bg-thirdly tw-rounded-full"
+            class="tw-absolute tw-top-1/2 tw-left-0 tw-right-0 tw-h-2 tw-bg-thirdly tw-rounded-full"
           ></div>
           <!--completed bar-->
           <div
-            class="glowBar tw-absolute tw-top-1/2 tw-left-0 tw-right-0 tw-h-1 tw-w-10/12 tw-bg-primary tw-rounded-full"
+            class="glowBar tw-absolute tw-top-1/2 tw-left-0 tw-right-0 tw-h-2 tw-w-10/12 tw-bg-primary tw-rounded-full"
           ></div>
           <!--circles-->
           <div
@@ -25,13 +25,13 @@
           >
             <div
               :style="{ background: item.logoBg }"
-              class="roadPoint tw-flex tw-w-10 tw-h-10 tw-rounded-full tw-items-center tw-justify-center tw-text-white tw-font-bold overflow-hidden"
+              class="roadPoint tw-flex tw-w-16 tw-h-16 tw-rounded-full tw-items-center tw-justify-center tw-text-white tw-font-bold overflow-hidden"
             >
               <q-img
                 fit="contain"
                 :src="item.logo"
                 alt="roadmap"
-                class="tw-w-full tw-h-auto"
+                class=""
               ></q-img>
               <div class="speechBubble tw-absolute tw-w-3/12 tw-top-full">
                 <div class="triangle"></div>

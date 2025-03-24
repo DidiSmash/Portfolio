@@ -56,12 +56,6 @@
       >
         <h1 class="tw-text-xl tw-font-medium tw-my-2">{{ company.name }}</h1>
         <p class="tw-text-lg tw-my-3 tw-px-4 tw-w-2/3" v-html="company.description"/>
-        <p v-if="arrowDirection === 'up'" class="tw-text-lg tw-my-3 tw-px-4 tw-w-2/3">{{ company.more }}</p>
-
-        <q-btn rounded @click="changeDirection" class="tw-bg-primary tw-text-thirdly tw-my-5">
-          <q-icon :name="'keyboard_arrow_' + arrowDirection"/>
-          Plus d'information
-        </q-btn>
       </div>
     </div>
     <p class="tw-mx-28 tw-py-5 tw-text-xl">
@@ -154,7 +148,6 @@
 </template>
 
 <script setup>
-//import axios from "axios";
 import {getCurrentInstance, ref} from "vue";
 import { useRoute, useRouter } from "vue-router";
 
@@ -177,7 +170,6 @@ const router = useRouter();
 const company = ref(null);
 const projects = ref([]);
 const openMap = ref(null);
-const arrowDirection = ref("down")
 
 for (let i = 0; i < projectsData.length; i++) {
   if (projectsData[i].id === "company") {
@@ -203,10 +195,6 @@ for (let i = 0; i < projectsData.length; i++) {
   }
 }
 
-/*function getLinearGradient(color1, color2, color3) {
-  return `linear-gradient(to right, ${color1}, ${color2}, ${color3})`;
-}*/
-
 function handleMouseDownCard(id) {
   setTimeout(() => {
     router.push("/projects/" + id);
@@ -217,10 +205,6 @@ function handleMouseDown() {
   setTimeout(() => {
     router.push("/projects");
   }, 500);
-}
-
-function changeDirection() {
-  arrowDirection.value === 'down' ? arrowDirection.value = 'up' : arrowDirection.value = 'down'
 }
 </script>
 
