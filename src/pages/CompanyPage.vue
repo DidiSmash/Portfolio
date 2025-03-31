@@ -36,7 +36,7 @@
                 fit="contain"
                 :src="tool"
                 alt="parallax1"
-                class="tw-rounded-2.5xl tw-mt-3 tw-p-5"
+                class="tw-mt-3 tw-p-5"
               />
             </div>
           </div>

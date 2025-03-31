@@ -127,6 +127,11 @@ const projects = [
     logoBg: "#343950",
     company: null,
     frameworks: [foundLanguage("DiscordJs")],
+    tools: [
+      new URL('assets/icons/vscode.png', import.meta.url).href,
+      new URL('assets/icons/github.png', import.meta.url).href,
+      new URL('assets/icons/mongoDB.png', import.meta.url).href,
+    ],
     date: "2024",
     images: [
       new URL('assets/projects/images/OniBot4.png', import.meta.url).href,
@@ -188,6 +193,11 @@ const projects = [
       foundLanguage("CSS"),
     ],
     frameworks: null,
+    tools: [
+      new URL('assets/icons/vscode.png', import.meta.url).href,
+      new URL('assets/icons/github.png', import.meta.url).href,
+      new URL('assets/icons/mongoDB.png', import.meta.url).href,
+    ],
     date: "2024",
     images: [
       new URL('assets/projects/images/ecoElec1.png', import.meta.url).href,
@@ -207,6 +217,9 @@ const projects = [
     company: null,
     languages: [foundLanguage("Godot")],
     frameworks: null,
+    tools: [
+      new URL('assets/icons/github.png', import.meta.url).href,
+    ],
     date: "2024",
     images: [
       new URL('assets/projects/images/TDGD3D1.png', import.meta.url).href,
@@ -224,6 +237,10 @@ const projects = [
     company: null,
     languages: [foundLanguage("Kotlin")],
     frameworks: [foundLanguage("Jetpack Compose")],
+    tools: [
+      new URL('assets/icons/androidStudio.png', import.meta.url).href,
+      new URL('assets/icons/github.png', import.meta.url).href,
+    ],
     date: "2024",
     images: [
       new URL('assets/projects/images/fakeEnt4.png', import.meta.url).href,
