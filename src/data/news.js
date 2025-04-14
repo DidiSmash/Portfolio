@@ -13,6 +13,20 @@ const actuality = [
     date: "20 janvier 2025.",
     link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
+  {
+    name: "DeepSeek R1",
+    description: "DeepSeek-R1 est un modèle de langage développé par la start-up chinoise DeepSeek. Il se distingue par ses performances élevées et son coût de développement réduit,",
+    icon: new URL('assets/icons/deepseek.jpg', import.meta.url).href,
+    date: "20 janvier 2025.",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    name: "DeepSeek R1",
+    description: "DeepSeek-R1 est un modèle de langage développé par la start-up chinoise DeepSeek. Il se distingue par ses performances élevées et son coût de développement réduit,",
+    icon: new URL('assets/icons/deepseek.jpg', import.meta.url).href,
+    date: "20 janvier 2025.",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
 ]
 
 const workflow = [

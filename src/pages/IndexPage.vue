@@ -50,7 +50,7 @@ import ContactComponent from 'components/menuComponent/ContactComponent.vue'
 const swiperInstance = ref();
 const icons = ref(["home", "info", "construction", "newspaper", "email"]);
 const modules = [Pagination, Mousewheel, EffectCreative];
-const mousewheel = ref({ forceToAxis: true, releaseOnEdges: true });
+const mousewheel = ref({ releaseOnEdges: true });
 const pagination = ref({
   clickable: true,
   renderBullet: function (index, className) {
