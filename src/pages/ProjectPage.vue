@@ -98,6 +98,7 @@
     <ImageZoomC
       :image="selectedImg"
       :isVisible="!!selectedImg"
+      :modeProject="true"
       @close="selectedImg = null"
     />
   </q-page>

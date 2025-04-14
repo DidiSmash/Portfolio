@@ -40,48 +40,54 @@ const languages = [
   },
   {
     id: 7,
+    name: "SQL",
+    color: "#0a86c8",
+    icon: "azuresqldatabase/azuresqldatabase-original",
+  },
+  {
+    id: 8,
     name: "Kotlin",
     color: "#8072ff",
     icon: "kotlin/kotlin-original",
   },
   {
-    id: 8,
+    id: 9,
     name: "VueJs",
     color: "#72ff77",
     icon: "vuejs/vuejs-original",
   },
   {
-    id: 9,
+    id: 10,
     name: "Tailwind",
     color: "#72ffff",
     icon: "tailwindcss/tailwindcss-original",
   },
   {
-    id: 10,
+    id: 11,
     name: "DiscordJs",
     color: "#9a72ff",
     icon: "discordjs/discordjs-original",
   },
   {
-    id: 11,
+    id: 12,
     name: "Symphony",
     color: "#ffffff",
     icon: "symfony/symfony-original",
   },
   {
-    id: 12,
+    id: 13,
     name: "Jetpack Compose",
     color: "#9aff72",
     icon: "jetpackcompose/jetpackcompose-original",
   },
   {
-    id: 13,
+    id: 14,
     name: "Godot",
     color: "#729aff",
     icon: "godot/godot-original",
   },
   {
-    id: 14,
+    id: 15,
     name: "Quasar",
     color: "#72efff",
     icon: "quasar/quasar-original",
@@ -122,7 +128,6 @@ const projects = [
     title: "The Oni",
     description:
       "Bot discord multifonctionnel, permettant de gérer des serveurs discords, de jouer à des jeux et faire des actions de modération.",
-    more: "Blablabla",
     logo: new URL('assets/projects/AkuBotIcon.png', import.meta.url).href,
     logoBg: "#343950",
     company: null,
@@ -132,7 +137,7 @@ const projects = [
       new URL('assets/icons/github.png', import.meta.url).href,
       new URL('assets/icons/mongoDB.png', import.meta.url).href,
     ],
-    date: "2024",
+    date: "2020",
     images: [
       new URL('assets/projects/images/OniBot4.png', import.meta.url).href,
       new URL('assets/projects/images/OniBot3.png', import.meta.url).href,
@@ -142,48 +147,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Tethys - upgrade cron",
-    description:
-      "La page des crons était déjà créée sur tethys, mon travail était donc de rajouter 2 éléments à cette page:\n\n1. La durée de la dernière exécution à la base de donnée des crons permettant de savoir directement combien de temps a pris le dernier cron et vérifié qu'il n'y ait pas eu d'erreurs.\n\n2. l'ajout d'une nouvelle action “historique” qui répertorie tout l’historique d’un cron avec les dates et durées d'exécution ainsi que les erreurs s'il y en a eu.",
-    more: "Blablabla",
-    logo: new URL('assets/projects/TethysIcon.png', import.meta.url).href,
-    logoBg: "#153155",
-    company: foundCompany("COM&Company"),
-    frameworks: [foundLanguage("VueJs"), foundLanguage("Symphony"), foundLanguage("Tailwind")],
-    date: "2024",
-    images: [
-      new URL('assets/projects/images/tethysCron1.png', import.meta.url).href,
-      new URL('assets/projects/images/tethysCron2.png', import.meta.url).href,
-    ],
-  },
-  {
-    id: 3,
-    title: "Espace Client - Pratique/page interne",
-    description:
-      "La page pratique de l’espace client est une page qui recentre toutes les informations dont un utilisateur pourrait avoir besoin, elle permet de naviguer entre les pages d’aides et d’en chercher une grâce à son titre, son contenu ou sa catégorie.",
-    more: "Blablabla",
-    logo: new URL('assets/projects/ValorityIcon.png', import.meta.url).href,
-    logoBg: "#d5a879",
-    company: foundCompany("COM&Company"),
-    frameworks: [
-      foundLanguage("VueJs"),
-      foundLanguage("Symphony"),
-      foundLanguage("Quasar"),
-      foundLanguage("Tailwind"),
-    ],
-    date: "2024",
-    images: [
-      new URL('assets/projects/images/espaceClient3.jpg', import.meta.url).href,
-      new URL('assets/projects/images/espaceClient2.jpg', import.meta.url).href,
-      new URL('assets/projects/images/espaceClient1.jpg', import.meta.url).href,
-    ],
-  },
-  {
-    id: 4,
     title: "EcoElec",
     description:
       "Site web de vente d'objets informatique reconditionné et chef-d’œuvre de mon bac pro SN.",
-    more: "Blablabla",
     logo: new URL('assets/projects/EcoElecIcon.png', import.meta.url).href,
     logoBg: "#72ff77",
     company: null,
@@ -198,7 +164,7 @@ const projects = [
       new URL('assets/icons/github.png', import.meta.url).href,
       new URL('assets/icons/mongoDB.png', import.meta.url).href,
     ],
-    date: "2024",
+    date: "2023",
     images: [
       new URL('assets/projects/images/ecoElec1.png', import.meta.url).href,
       new URL('assets/projects/images/ecoElec2.png', import.meta.url).href,
@@ -207,31 +173,10 @@ const projects = [
     ],
   },
   {
-    id: 5,
-    title: "TD3D",
-    description:
-      "Tower défense 3D créant des map aléatoires à chaque niveau ou nouvelle partie.",
-    more: "Blablabla",
-    logo: new URL('assets/projects/TDGD-3DIcon.png', import.meta.url).href,
-    logoBg: "#dc9571",
-    company: null,
-    languages: [foundLanguage("Godot")],
-    frameworks: null,
-    tools: [
-      new URL('assets/icons/github.png', import.meta.url).href,
-    ],
-    date: "2024",
-    images: [
-      new URL('assets/projects/images/TDGD3D1.png', import.meta.url).href,
-      new URL('assets/projects/images/TDGD3D2.png', import.meta.url).href,
-    ],
-  },
-  {
-    id: 6,
+    id: 3,
     title: "Fake ENT",
     description:
       "Fausse application mobile du site de l'ENT, dans le but de faire de la prévention sur les dangers de données ses informations personnelles sans vérifier l'auteur.",
-    more: "Blablabla",
     logo: new URL('assets/projects/EntIcon.png', import.meta.url).href,
     logoBg: "#ffffff",
     company: null,
@@ -250,15 +195,102 @@ const projects = [
     ],
   },
   {
-    id: 7,
-    title: "Tethys - chiffres clés",
+    id: 4,
+    title: "TD3D",
     description:
-      "La page chiffres clés permet de Rechercher, Créer et Éditer des chiffres clés et leurs valeurs. Permettant par la suite aux autres applications de les récupérer grâce à une API.",
-    more: "Blablabla",
+      "Tower défense 3D créant des map aléatoires à chaque niveau ou nouvelle partie.",
+    logo: new URL('assets/projects/TDGD-3DIcon.png', import.meta.url).href,
+    logoBg: "#dc9571",
+    company: null,
+    languages: [foundLanguage("Godot")],
+    frameworks: null,
+    tools: [
+      new URL('assets/icons/github.png', import.meta.url).href,
+    ],
+    date: "2024",
+    images: [
+      new URL('assets/projects/images/TDGD3D1.png', import.meta.url).href,
+      new URL('assets/projects/images/TDGD3D2.png', import.meta.url).href,
+    ],
+  },
+  {
+    id: 5,
+    title: "MultiBuro",
+    description:
+      "Solution logicielle permettant de gérer la réservation des espaces de travail mis à disposition des clients (locataires) pour la société multiburo.",
+    logo: new URL('assets/projects/multiburoIcon.png', import.meta.url).href,
+    logoBg: "#989ba3",
+    company: null,
+    languages: [
+      foundLanguage("C#"),
+      foundLanguage("PHP"),
+      foundLanguage("HTML"),
+      foundLanguage("CSS"),
+      foundLanguage("SQL"),
+    ],
+    frameworks: null,
+    tools: [
+      new URL('assets/icons/github.png', import.meta.url).href,
+    ],
+    date: "2024",
+    images: [
+      new URL('assets/projects/images/TDGD3D1.png', import.meta.url).href,
+      new URL('assets/projects/images/TDGD3D2.png', import.meta.url).href,
+    ],
+  },
+  {
+    id: 6,
+    title: "Tethys - upgrade cron",
+    description:
+      "La page des crons était déjà créée sur tethys, mon travail était donc de rajouter 2 éléments à cette page:\n\n1. La durée de la dernière exécution à la base de donnée des crons permettant de savoir directement combien de temps a pris le dernier cron et vérifié qu'il n'y ait pas eu d'erreurs.\n\n2. l'ajout d'une nouvelle action “historique” qui répertorie tout l’historique d’un cron avec les dates et durées d'exécution ainsi que les erreurs s'il y en a eu.",
     logo: new URL('assets/projects/TethysIcon.png', import.meta.url).href,
     logoBg: "#153155",
     company: foundCompany("COM&Company"),
-    frameworks: [foundLanguage("VueJs"), foundLanguage("Symphony"), foundLanguage("Tailwind")],
+    frameworks: [
+      foundLanguage("VueJs"),
+      foundLanguage("Symphony"),
+      foundLanguage("Tailwind"),
+    ],
+    date: "2024",
+    images: [
+      new URL('assets/projects/images/tethysCron1.png', import.meta.url).href,
+      new URL('assets/projects/images/tethysCron2.png', import.meta.url).href,
+    ],
+  },
+  {
+    id: 7,
+    title: "Espace Client - Pratique/page interne",
+    description:
+      "La page pratique de l’espace client est une page qui recentre toutes les informations dont un utilisateur pourrait avoir besoin, elle permet de naviguer entre les pages d’aides et d’en chercher une grâce à son titre, son contenu ou sa catégorie.",
+    logo: new URL('assets/projects/ValorityIcon.png', import.meta.url).href,
+    logoBg: "#d5a879",
+    company: foundCompany("COM&Company"),
+    frameworks: [
+      foundLanguage("VueJs"),
+      foundLanguage("Symphony"),
+      foundLanguage("Quasar"),
+      foundLanguage("Tailwind"),
+    ],
+    date: "2024",
+    images: [
+      new URL('assets/projects/images/espaceClient3.jpg', import.meta.url).href,
+      new URL('assets/projects/images/espaceClient2.jpg', import.meta.url).href,
+      new URL('assets/projects/images/espaceClient1.jpg', import.meta.url).href,
+    ],
+  },
+  {
+    id: 8,
+    title: "Tethys - chiffres clés",
+    description:
+      "La page chiffres clés permet de Rechercher, Créer et Éditer des chiffres clés et leurs valeurs. Permettant par la suite aux autres applications de les récupérer grâce à une API.",
+    logo: new URL('assets/projects/TethysIcon.png', import.meta.url).href,
+    logoBg: "#153155",
+    company: foundCompany("COM&Company"),
+    frameworks: [
+      foundLanguage("VueJs"),
+      foundLanguage("Symphony"),
+      foundLanguage("Tailwind"),
+    ],
     date: "2024",
     images: [
       new URL('assets/projects/images/chiffresCles1.png', import.meta.url).href,
@@ -266,12 +298,42 @@ const projects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
+    title: "Gourmetise",
+    description:
+      "L'application Gourmetise permet aux boulangers de participer à un concours face à d'autres " +
+      "boulangeries de leurs région de partager leur passion pour la boulangerie et aux amateurs de" +
+      "découvrir les meilleures boulangeries de la région.",
+    logo: new URL('assets/projects/GourmetiseIcon.png', import.meta.url).href,
+    logoBg: "#bc4242",
+    company: null,
+    languages: [foundLanguage("Kotlin")],
+    frameworks: [
+      foundLanguage("VueJs"),
+      foundLanguage("Symphony"),
+      foundLanguage("Tailwind"),
+      foundLanguage("Jetpack Compose"),
+    ],
+    tools: [
+      new URL('assets/icons/phpstorm.png', import.meta.url).href,
+      new URL('assets/icons/androidStudio.png', import.meta.url).href,
+      new URL('assets/icons/github.png', import.meta.url).href,
+      new URL('assets/icons/trello.png', import.meta.url).href,
+    ],
+    date: "2025",
+    images: [
+      new URL('assets/projects/images/trombyBanniere4.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere2.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere3.png', import.meta.url).href,
+      new URL('assets/projects/images/trombyBanniere1.png', import.meta.url).href,
+    ],
+  },
+  {
+    id: 10,
     title: "BO Espace Client - Informations avancées utilisateur",
     description:
       "Page avec les informations avancer d’un utilisateur pour centraliser " +
       "un maximum de donnée et trouver des solutions à ses problèmes plus facilement.",
-    more: "Blablabla",
     logo: new URL('assets/projects/ValorityIcon.png', import.meta.url).href,
     logoBg: "#3d613c",
     company: foundCompany("COM&Company"),
@@ -289,7 +351,7 @@ const projects = [
     ],
   },
   {
-    id: 9,
+    id: 11,
     title: "E-Tromby - Bannières de signature",
     description:
       "La page bannières de signature permet au administrateur de gérer les bannières qu'on un ou plusieurs " +
@@ -297,7 +359,6 @@ const projects = [
       "créer des bannières personnalisable doté de date de début, de date de fin, d'affectation et même de " +
       "lien cliquable. Elles peuvent être modifiées à tout moment. et une section de filtre permet de " +
       "les retrouver rapidement.",
-    more: "Blablabla",
     logo: new URL('assets/projects/ValorityIcon.png', import.meta.url).href,
     logoBg: "#785e41",
     company: foundCompany("COM&Company"),
@@ -307,38 +368,6 @@ const projects = [
       foundLanguage("Tailwind"),
     ],
     date: "2024",
-    images: [
-      new URL('assets/projects/images/trombyBanniere4.png', import.meta.url).href,
-      new URL('assets/projects/images/trombyBanniere2.png', import.meta.url).href,
-      new URL('assets/projects/images/trombyBanniere3.png', import.meta.url).href,
-      new URL('assets/projects/images/trombyBanniere1.png', import.meta.url).href,
-    ],
-  },
-  {
-    id: 10,
-    title: "Gourmetise",
-    description:
-      "L'application Gourmetise permet aux boulangers de participer à un concours face à d'autres " +
-      "boulangeries de leurs région de partager leur passion pour la boulangerie et aux amateurs de" +
-      "découvrir les meilleures boulangeries de la région.",
-    more: "Blablabla",
-    logo: new URL('assets/projects/GourmetiseIcon.png', import.meta.url).href,
-    logoBg: "#bc4242",
-    company: null,
-    languages: [foundLanguage("Kotlin")],
-    frameworks: [
-      foundLanguage("VueJs"),
-      foundLanguage("Symphony"),
-      foundLanguage("Tailwind"),
-      foundLanguage("Jetpack Compose")
-    ],
-    tools: [
-      new URL('assets/icons/phpstorm.png', import.meta.url).href,
-      new URL('assets/icons/androidStudio.png', import.meta.url).href,
-      new URL('assets/icons/github.png', import.meta.url).href,
-      new URL('assets/icons/trello.png', import.meta.url).href,
-    ],
-    date: "2025",
     images: [
       new URL('assets/projects/images/trombyBanniere4.png', import.meta.url).href,
       new URL('assets/projects/images/trombyBanniere2.png', import.meta.url).href,
