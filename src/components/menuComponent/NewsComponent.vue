@@ -37,7 +37,7 @@
                 <p class="tw-text-sm tw-text-gray-500 tw-mt-2 tw-px-24">{{ step.description }}</p>
                 <div v-if="step.tools" class="tw-flex tw-flex-wrap tw-justify-evenly">
                   <div v-for="theStep in step.tools" :key="theStep.id" class="tw-h-full tw-mx-3">
-                    <a :href="theStep.link">
+                    <a :href="theStep.link" target="_blank">
                       <q-img
                         fit="contain"
                         :src="theStep.icons"

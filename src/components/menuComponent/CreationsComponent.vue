@@ -232,7 +232,7 @@ function Search(filter) {
 
   for (let i = 0; i < projectsData.length; i++) {
     if (projectsData[i].id === 'projects') {
-      for (let j = 0; j < projectsData[i].data.length; j++) {
+      for (let j = projectsData[i].data.length - 1; j >= 0; j--) {
         let project = projectsData[i].data[j]
 
         if (

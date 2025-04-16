@@ -234,12 +234,29 @@ const projects = [
     ],
     date: "2024",
     images: [
-      new URL('assets/projects/images/TDGD3D1.png', import.meta.url).href,
-      new URL('assets/projects/images/TDGD3D2.png', import.meta.url).href,
     ],
   },
   {
     id: 6,
+    title: "Tethys - chiffres clés",
+    description:
+      "La page chiffres clés permet de Rechercher, Créer et Éditer des chiffres clés et leurs valeurs. Permettant par la suite aux autres applications de les récupérer grâce à une API.",
+    logo: new URL('assets/projects/TethysIcon.png', import.meta.url).href,
+    logoBg: "#153155",
+    company: foundCompany("COM&Company"),
+    frameworks: [
+      foundLanguage("VueJs"),
+      foundLanguage("Symphony"),
+      foundLanguage("Tailwind"),
+    ],
+    date: "2024",
+    images: [
+      new URL('assets/projects/images/chiffresCles1.png', import.meta.url).href,
+      new URL('assets/projects/images/chiffresCles2.png', import.meta.url).href,
+    ],
+  },
+  {
+    id: 7,
     title: "Tethys - upgrade cron",
     description:
       "La page des crons était déjà créée sur tethys, mon travail était donc de rajouter 2 éléments à cette page:\n\n1. La durée de la dernière exécution à la base de donnée des crons permettant de savoir directement combien de temps a pris le dernier cron et vérifié qu'il n'y ait pas eu d'erreurs.\n\n2. l'ajout d'une nouvelle action “historique” qui répertorie tout l’historique d’un cron avec les dates et durées d'exécution ainsi que les erreurs s'il y en a eu.",
@@ -258,7 +275,7 @@ const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Espace Client - Pratique/page interne",
     description:
       "La page pratique de l’espace client est une page qui recentre toutes les informations dont un utilisateur pourrait avoir besoin, elle permet de naviguer entre les pages d’aides et d’en chercher une grâce à son titre, son contenu ou sa catégorie.",
@@ -276,25 +293,6 @@ const projects = [
       new URL('assets/projects/images/espaceClient3.jpg', import.meta.url).href,
       new URL('assets/projects/images/espaceClient2.jpg', import.meta.url).href,
       new URL('assets/projects/images/espaceClient1.jpg', import.meta.url).href,
-    ],
-  },
-  {
-    id: 8,
-    title: "Tethys - chiffres clés",
-    description:
-      "La page chiffres clés permet de Rechercher, Créer et Éditer des chiffres clés et leurs valeurs. Permettant par la suite aux autres applications de les récupérer grâce à une API.",
-    logo: new URL('assets/projects/TethysIcon.png', import.meta.url).href,
-    logoBg: "#153155",
-    company: foundCompany("COM&Company"),
-    frameworks: [
-      foundLanguage("VueJs"),
-      foundLanguage("Symphony"),
-      foundLanguage("Tailwind"),
-    ],
-    date: "2024",
-    images: [
-      new URL('assets/projects/images/chiffresCles1.png', import.meta.url).href,
-      new URL('assets/projects/images/chiffresCles2.png', import.meta.url).href,
     ],
   },
   {

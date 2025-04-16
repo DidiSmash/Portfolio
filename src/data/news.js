@@ -59,7 +59,7 @@ const details = [
     image: new URL('assets/png/dailydev.jpg', import.meta.url).href,
   },
   {
-    image: new URL('assets/icons/deepseek.jpg', import.meta.url).href,
+    image: new URL('assets/png/notionbased.png', import.meta.url).href,
   },
 ]
 
