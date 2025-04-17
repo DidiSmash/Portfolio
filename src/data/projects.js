@@ -234,6 +234,10 @@ const projects = [
     ],
     date: "2024",
     images: [
+      new URL('assets/projects/images/multiburo1.png', import.meta.url).href,
+      new URL('assets/projects/images/multiburo2.png', import.meta.url).href,
+      new URL('assets/projects/images/multiburo3.png', import.meta.url).href,
+      new URL('assets/projects/images/multiburo4.png', import.meta.url).href,
     ],
   },
   {
@@ -320,10 +324,10 @@ const projects = [
     ],
     date: "2025",
     images: [
-      new URL('assets/projects/images/trombyBanniere4.png', import.meta.url).href,
-      new URL('assets/projects/images/trombyBanniere2.png', import.meta.url).href,
-      new URL('assets/projects/images/trombyBanniere3.png', import.meta.url).href,
-      new URL('assets/projects/images/trombyBanniere1.png', import.meta.url).href,
+      new URL('assets/projects/images/gourmetise1.png', import.meta.url).href,
+      new URL('assets/projects/images/gourmetise2.png', import.meta.url).href,
+      new URL('assets/projects/images/gourmetise3.png', import.meta.url).href,
+      new URL('assets/projects/images/gourmetise4.png', import.meta.url).href,
     ],
   },
   {

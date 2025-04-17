@@ -84,13 +84,13 @@
         <div
           v-for="image in project.images"
           :key="image"
-          class="icon tw-p-1 tw-z-10 tw-min-w-0"
         >
+<!--          icon-->
           <q-img
             :src="image"
             fit="contain"
             @click="selectedImg = image"
-            class="tw-rounded-2.5xl tw-max-h-96 tw-w-full"
+            class="icon tw-rounded-2.5xl tw-max-h-96 "
           />
         </div>
       </div>
